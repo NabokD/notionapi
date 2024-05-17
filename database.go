@@ -63,6 +63,7 @@ type DatabaseCreateRequest struct {
 	// appear in Notion and the values are property schema objects.
 	Properties PropertyConfigs `json:"properties"`
 	IsInline   bool            `json:"is_inline"`
+	Icon       *Icon           `json:"icon,omitempty"`
 }
 
 // Gets a list of Pages contained in the database, filtered and ordered
